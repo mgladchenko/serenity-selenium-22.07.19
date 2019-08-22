@@ -23,12 +23,16 @@ public class CommonStepDefinition {
 
     @When("I sign In as '$userEmail' , '$userPassword'")
     public void whenISignInAs(String userEmail, String userPassword) {
-
-        // PENDING
+        userSteps.login(userEmail, userPassword);
     }
 
     @Then("I should be on Home page")
     public void thenIShouldBeOnHomePage() {
-        // PENDING
+        userSteps.isHomePageLoaded();
+    }
+
+    @Then("I should be on Login page")
+    public void thenIShouldBeOnLoginPage() {
+        userSteps.isLoginPageLoaded();
     }
 }

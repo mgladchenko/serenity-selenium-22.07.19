@@ -12,7 +12,7 @@ Scenario: Successful user login
 Meta:
 @tag login01
 Given I open Landing page
-When I click on 'Sign In' button
+When I click on 'Sign in' button
 Then I should be on Login page
-When I sign In as "user" , "password"
+When I sign In as 'linkedin.tst.yanina@gmail.com' , 'Test123!'
 Then I should be on Home page
