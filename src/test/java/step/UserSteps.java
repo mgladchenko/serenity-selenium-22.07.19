@@ -28,12 +28,12 @@ public class UserSteps extends ScenarioSteps {
     }
 
     @Step
-    public void isHomePageLoaded() {
-        homePage.isPageLoaded();
+    public boolean isHomePageLoaded() {
+        return homePage.isPageLoaded();
     }
 
     @Step
-    public void isLoginPageLoaded() {
-        loginPage.isPageLoaded();
+    public boolean isLoginPageLoaded() {
+        return loginPage.isPageLoaded();
     }
 }

@@ -4,6 +4,7 @@ import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.junit.Assert;
 import step.UserSteps;
 
 public class CommonStepDefinition {
@@ -28,11 +29,11 @@ public class CommonStepDefinition {
 
     @Then("I should be on Home page")
     public void thenIShouldBeOnHomePage() {
-        userSteps.isHomePageLoaded();
+        Assert.assertTrue("Home page is not loaded.", userSteps.isHomePageLoaded());
     }
 
     @Then("I should be on Login page")
     public void thenIShouldBeOnLoginPage() {
-        userSteps.isLoginPageLoaded();
+        Assert.assertTrue("Home page is not loaded.", userSteps.isLoginPageLoaded());
     }
 }
