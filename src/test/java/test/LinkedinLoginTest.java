@@ -1,16 +1,16 @@
 package test;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import step.UserSteps;
+
+import static java.lang.Thread.sleep;
 
 @RunWith(SerenityRunner.class)
 public class LinkedinLoginTest extends BaseTest {
 
     @Test
-    public void successfulLoginTest() {
+    public void successfulLoginTest() throws InterruptedException {
         user.openLandingPage();
     }
 }

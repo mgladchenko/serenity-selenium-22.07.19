@@ -12,4 +12,9 @@ public class UserSteps extends ScenarioSteps {
     public void openLandingPage() {
         landingPage.open();
     }
+
+    @Step
+    public void clickOnButton(String buttonText) {
+        landingPage.clickOnButtonWithText(buttonText);
+    }
 }
