@@ -1,5 +1,6 @@
 package step.definition;
 
+import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
@@ -13,6 +14,7 @@ public class CommonStepDefinition {
     private UserSteps userSteps;
 
     @Given("I open Landing page")
+    @Step
     public void openLandingPage() {
         userSteps.openLandingPage();
     }
